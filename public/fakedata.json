@@ -1,0 +1,81 @@
+[
+    {
+      "_id": "1",
+      "balance": "$30",
+      "picture": "./Blush-1.jpg",
+      "name": "Gorgeous Blush"
+    },
+    {
+      "_id": "623ddf099345fabb1832df0f",
+      "balance": "$1,102.88",
+      "picture": "./Blush-2.jpg",
+      "name": "Lakme Blush"
+    },
+    {
+      "_id": "623ddf0912de238f1d18b6d0",
+      "balance": "$2,475.54",
+      "picture": "./Brush-1.jpg",
+      "name": "Brush"
+    },
+    {
+      "_id": "623ddf09537635192777bcad",
+      "balance": "$1,929.68",
+      "picture": "./Brush-2.jpg",
+      "name": "Alba  Brush"
+    },
+    {
+        "_id": "623ddf096682117171c043dc",
+        "balance": "$1,778.73",
+        "picture": "./combo-peck-1.jpg",
+        "name": "Mavis hot Combo"
+      },
+      {
+        "_id": "623ddf096682117171c043dc",
+        "balance": "$1,778.73",
+        "picture": "./combo-peck-2.jpg",
+        "name": "Mavis hot Combo"
+      },
+      {
+        "_id": "623ddf096682117171c043dc",
+        "balance": "$1,778.73",
+        "picture": "./eye-lash.jpg.jpg",
+        "name": "Eye lash"
+      },
+      {
+        "_id": "623ddf096682117171c043dc",
+        "balance": "$1,778.73",
+        "picture": "./heighlighter-3.jpg.jpg",
+        "name": "Hightlighter"
+      },
+      {
+        "_id": "623ddf096682117171c043dc",
+        "balance": "$1,778.73",
+        "picture": "./highlighter-1.jpg.jpg",
+        "name": "Mavis heighter"
+      },
+      {
+        "_id": "623ddf096682117171c043dc",
+        "balance": "$1,778.73",
+        "picture": "./highlighter-2.jpg.jpg",
+        "name": "Mavis hot Combo"
+      },
+      {
+        "_id": "623ddf096682117171c043dc",
+        "balance": "$1,778.73",
+        "picture": "./Lipstic-1.jpg.jpg",
+        "name": "Mavis hot Lipstic"
+      },
+    {
+      "_id": "623ddf096682117171c043dc",
+      "balance": "$1,778.73",
+      "picture": "./powder-1.jpg.jpg",
+      "name": "Face hot Combo"
+    },
+    {
+      "_id": "623ddf0904e2ed00ce83d356",
+      "balance": "$1,967.11",
+      "picture": "./powder-2.jpg.jpg",
+      "name": "Ethel Nice powder"
+    }
+
+  ]
