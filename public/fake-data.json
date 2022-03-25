@@ -1,0 +1,76 @@
+[
+    {
+      "_id": "1",
+      "balance": "$30",
+      "picture": "./Blush-1.jpg",
+      "name": "Mac-Star Eye Shadow"
+    },
+    {
+      "_id": "2",
+      "balance": "$19",
+      "picture": "./Blush-2.jpg",
+      "name": "Mybelline New Blush "
+    },
+    {
+      "_id": "3",
+      "balance": "$59",
+      "picture": "./Brush-1.jpg",
+      "name": "Naked-3 Brush"
+    },
+    {
+      "_id": "4",
+      "balance": "$68",
+      "picture": "./Brush-2.jpg",
+      "name": "Alba  Brush Set"
+    },
+    
+      {
+        "_id": "5",
+        "balance": "$110",
+        "picture": "./combo-peck-2.jpg",
+        "name": "Mavis hot Combo"
+      },
+      {
+        "_id": "6",
+        "balance": "$6",
+        "picture": "./eye-lash.jpg",
+        "name": "Lakme Eye lash"
+      },
+      {
+        "_id": "7",
+        "balance": "$53",
+        "picture": "./heighlighter-3.jpg",
+        "name": "Shimmer Hightlighter"
+      },
+      {
+        "_id": "8",
+        "balance": "$73",
+        "picture": "./highlighter-1.jpg",
+        "name": "Rose Highlighter-4"
+      },
+      {
+        "_id": "9",
+        "balance": "$73",
+        "picture": "./highlighter-2.jpg",
+        "name": "Glow Powder"
+      },
+      {
+        "_id": "10",
+        "balance": "$23",
+        "picture": "./Lipstic-1.jpg",
+        "name": "Matte Lipstic"
+      },
+    {
+      "_id": "11",
+      "balance": "$40",
+      "picture": "./powder-1.jpg",
+      "name": "Natural Face Powder"
+    },
+    {
+      "_id": "12",
+      "balance": "$37",
+      "picture": "./powder-2.jpg",
+      "name": "Compact Powder, 8g"
+    }
+
+  ]
