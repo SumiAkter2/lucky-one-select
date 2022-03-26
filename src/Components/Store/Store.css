@@ -4,7 +4,8 @@
 .store{
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 7px;
+  
 }
 .store img{
     width: 40px;

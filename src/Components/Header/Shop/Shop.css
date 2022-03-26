@@ -1,35 +1,44 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    margin: 20px;
-  position: relative;
+    gap: 4px;
+   
+  /* position: relative; */
 }
 .shop{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 4px;
+ /* position: relative; */
     height: 600px;
-    
 }
+
 .store-container{
-    background-color: purple;
-    width: 300px;
-    height: auto;
+    background-color: rgb(153, 47, 153);
+    width: 250px;
+    /* height: 300px; */
     border-radius: 10px;
     color: #FFFFFF;
-     /* position: fixed; */
+     position: fixed;
      right: 10px;
-    
+  
     border: 2px solid purple;
     
+}
+.store-text{
+    text-align: center;
+    
+  
 }
 .Store-btn{
     background-color: #FFFFFF;
     color: purple;
-    padding: 10px;
+    padding: 5px;
     width: 75%;
+   margin-bottom: 10px;
     border-radius: 20px;
     font-size: 20px;
+   
 }
 .Store-btn:hover{
     background-color: rgb(139, 76, 197);
@@ -37,15 +46,19 @@
 .button-container{
     padding: 10px 20px;
     background-color: purple;
+
     color: #FFFF;
     font-size: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    
 }
 .button-container:hover{
     background-color: rgb(150, 59, 235);
 }
-
+.error{
+    display: none;
+}
 @media screen and (max-width:576px) {
     .shop-container{
         display: grid;

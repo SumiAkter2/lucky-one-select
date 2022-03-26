@@ -14,6 +14,7 @@ const Product = ( { product ,addToStore}) => {
             <h1>{name}</h1>
            <h1>Price: {balance}</h1> 
            <button onClick={()=>addToStore(product)} className='button-container'>Select Me <FontAwesomeIcon icon={faBasketShopping}></FontAwesomeIcon> </button>
+          
         </div>
     );
 };

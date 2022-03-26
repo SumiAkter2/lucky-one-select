@@ -1,14 +1,26 @@
 // import losrom './logo.svg';
 import './App.css';
+import Answer from './Components/Answer/Answer';
+// import Answer from './Components/Answer/Answer';
 import Header from './Components/Header/Header';
 import Shop from './Components/Header/Shop/Shop';
 
 function App() {
   return (
-    <div>
+
+    
+      <div className='App'>
+      
+      <div>
+        {/* <Answer></Answer> */}
+        </div>
      <Header></Header>
      <Shop></Shop>
+  
+     
+     
     </div>
+   
   );
 }
 
