@@ -1,3 +1,5 @@
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Store = ({store}) => {
@@ -9,7 +11,7 @@ const Store = ({store}) => {
            <div className='details'>
                 
                <ul>
-                   <li>{store} <button>Del </button></li>
+                   <li>{store} <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon > </li>
                </ul>
                 <img src={store.picture} alt="" />
 

@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faRemove} from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import Product from '../../Product/Product';
 import Store from '../../Store/Store';
@@ -44,7 +46,7 @@ console.log(...newStore);
          }
        <button className='Store-btn'>Select One For Me </button>
        <br /><br />
-       <button className='Store-btn'>Remove All </button>
+       <button className='Store-btn'>Remove All <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon> </button>
          </div>
         </div>
     );
