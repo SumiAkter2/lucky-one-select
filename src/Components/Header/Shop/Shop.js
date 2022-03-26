@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../../Product/Product';
 import Store from '../../Store/Store';
 import './Shop.css'
-import Answer from '../../Answer/Answer';
+
 
 const Shop = () => {
     const [products, setProducts] =useState([]);
@@ -16,11 +16,11 @@ const Shop = () => {
         .then(data=>setProducts(data));
     },[]);
 
-// console.log(products);
+
 // add list item////////////////////////
 
     const addToStore=(product)=>{
-    //   console.log(product);
+
     
     // if(addToStore){
     //     console.log('asei');
@@ -60,11 +60,6 @@ const rndInt = Math.floor(Math.random() * 11) + 1;
 console.log(rndInt)
 }
 
-const deleteItem = ()=>{
-    setStores([]);
-    console.log('jai');
-}
-
 
     return (
        
@@ -76,7 +71,7 @@ const deleteItem = ()=>{
               products.map(product=><Product
                 key={product._id}
                 addToStore={addToStore}
-             deleteItem={deleteItem}
+             
                 product={product}></Product>)
             }
               </div>
