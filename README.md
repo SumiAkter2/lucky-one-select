@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-#[MakeUp Shop]
+[MakeUp Shop]
 
 #live link:
 (https://tiny-monstera-043ad8.netlify.app/)
