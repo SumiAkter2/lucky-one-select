@@ -13,13 +13,26 @@
 }
 .store-container{
     background-color: purple;
-    /* width: 300px; */
-    height: 100%;
+    width: 300px;
+    height: auto;
     border-radius: 10px;
-    color: #FFFF;
-    /* position: fixed; */
-    right: 0px;
+    color: #FFFFFF;
+     position: fixed;
+     right: 10px;
     
+    border: 2px solid purple;
+    
+}
+.Store-btn{
+    background-color: #FFFFFF;
+    color: purple;
+    padding: 10px;
+    width: 75%;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.Store-btn:hover{
+    background-color: rgb(139, 76, 197);
 }
 .button-container{
     padding: 10px 20px;

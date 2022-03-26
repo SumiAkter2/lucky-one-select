@@ -1,12 +1,19 @@
 import React from 'react';
 
-const Store = (props) => {
-    const {name,picture}=props.store;
-    console.log(props.store);
+const Store = ({store}) => {
+    // console.log(props);
+    // const {name,picture}=props.store;
+    // console.log(props.store);
     return (
         <div>
-            <h1>Name: {name}</h1>
-            <img src={picture} alt="" />
+           <div className='details'>
+                
+               <ul>
+                   <li>{store} <button>Del </button></li>
+               </ul>
+                <img src={store.picture} alt="" />
+
+           </div>
         </div>
     );
 };

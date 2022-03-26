@@ -10,11 +10,14 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data));
     },[]);
+
+console.log(products);
 const [stores, setStores]=useState([]);
-    const addToStore=(product)=>{
-       
-const newStore = [...stores,product];
+    const addToStore=(products)=>{
+      console.log(products);
+const newStore = [...stores,products];
 setStores(newStore)
+console.log(...newStore);
 
     }
 
@@ -31,13 +34,17 @@ setStores(newStore)
             }
               </div>
          <div className='store-container'>
-         <h1>store</h1>
+        <h2>Select Your Favorite 4 Products</h2>
          {
              stores.map(store=><Store 
                 key={store._id}
+               
                 store={store}></Store>)
+               
          }
-       
+       <button className='Store-btn'>Select One For Me </button>
+       <br /><br />
+       <button className='Store-btn'>Remove All </button>
          </div>
         </div>
     );
