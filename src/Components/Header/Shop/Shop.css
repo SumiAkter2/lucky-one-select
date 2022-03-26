@@ -17,7 +17,7 @@
     height: auto;
     border-radius: 10px;
     color: #FFFFFF;
-     position: fixed;
+     /* position: fixed; */
      right: 10px;
     
     border: 2px solid purple;
@@ -44,4 +44,20 @@
 }
 .button-container:hover{
     background-color: rgb(150, 59, 235);
+}
+
+@media screen and (max-width:576px) {
+    .shop-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        margin: 20px;
+      position: relative;
+    }
+    .shop{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 4px;
+        height: 600px;
+        
+    }
 }

@@ -1,4 +1,10 @@
 .header{
     color: purple;
-    
+    text-align: center;
+}
+@media screen and (max-width:576px) {
+   .header{
+       text-align: center;
+      
+   }
 }

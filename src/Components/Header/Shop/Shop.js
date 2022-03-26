@@ -7,21 +7,56 @@ import './Shop.css'
 
 const Shop = () => {
     const [products, setProducts] =useState([]);
+    const [stores, setStores]=useState([]);
+    //fetch data////////////////////
     useEffect(()=>{
         fetch('fake-data.json')
         .then(res=>res.json())
         .then(data=>setProducts(data));
     },[]);
 
-console.log(products);
-const [stores, setStores]=useState([]);
-    const addToStore=(products)=>{
-      console.log(products);
-const newStore = [...stores,products];
-setStores(newStore)
-console.log(...newStore);
+// console.log(products);
+// add list item////////////////////////
+
+    const addToStore=(product)=>{
+    //   console.log(product);
+    
+    // if(addToStore){
+    //     console.log('asei');
+    //     const newStore = [...stores,product];
+    //     setStores(newStore);
+      
+    // }
+    // if (addToStore){
+        const newStore = [...stores,product];
+        setStores(newStore);
+    // }
+    // else{
+    //   console.log('nai');  
+    // }
+         
+      
+     
 
     }
+    //remove///////////////////
+    const [remove, setRemove] =useState([]);
+    const removeToStore =()=>{    
+     
+        console.log(remove);
+        setRemove([]);
+    }
+
+    // random choosen///////////////////////
+    const [select, setSelect]=useState([]);
+   const handleSelectProduct=()=>{
+const selectProduct = Math.random(0, select.length-1)*10
+
+setSelect(selectProduct);
+console.log(selectProduct);
+   }
+
+
 
     return (
         <div className='shop-container'>
@@ -37,16 +72,17 @@ console.log(...newStore);
               </div>
          <div className='store-container'>
         <h2>Select Your Favorite 4 Products</h2>
-         {
-             stores.map(store=><Store 
-                key={store._id}
-               
-                store={store}></Store>)
+        <div>
+        {
+             stores.map(store=> (<Store
+                 key={store._id} 
+                 store={store}></Store>) )
                
          }
-       <button className='Store-btn'>Select One For Me </button>
+        </div>
+       <button onClick={handleSelectProduct} className='Store-btn'>Select One For Me </button>
        <br /><br />
-       <button className='Store-btn'>Remove All <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon> </button>
+       <button onClick={removeToStore} className='Store-btn'>Remove All <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon> </button>
          </div>
         </div>
     );

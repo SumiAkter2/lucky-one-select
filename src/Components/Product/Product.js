@@ -3,9 +3,9 @@ import {  faBasketShopping } from '@fortawesome/free-solid-svg-icons';
 
 import React from 'react';
 import './Product.css'
-const Product = (props) => {
-    const {picture,balance,name}=props.product;
-const {addToStore, product}=props;
+const Product = ( { product ,addToStore}) => {
+    const {picture,balance,name,_id}=product;
+
 
 
     return (
@@ -13,7 +13,7 @@ const {addToStore, product}=props;
             <img src={picture} alt="" />
             <h1>{name}</h1>
            <h1>Price: {balance}</h1> 
-           <button onClick={()=>addToStore(product.name)} className='button-container'>Add Store <FontAwesomeIcon icon={faBasketShopping}></FontAwesomeIcon> </button>
+           <button onClick={()=>addToStore(product)} className='button-container'>Select Me <FontAwesomeIcon icon={faBasketShopping}></FontAwesomeIcon> </button>
         </div>
     );
 };

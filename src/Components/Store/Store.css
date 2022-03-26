@@ -1,6 +1,12 @@
 .details{
     color: azure;
 }
-.details img{
-    width: 50px;
+.store{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.store img{
+    width: 40px;
+    border-radius: 50px;
 }

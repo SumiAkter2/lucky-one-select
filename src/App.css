@@ -11,9 +11,13 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+  .APP-header{
+    text-align: center;
+  }
+
 }
 
-.App-header {
+.APP-header{
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
