@@ -2,26 +2,22 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 4px;
-   
-  /* position: relative; */
+ 
 }
 .shop{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 4px;
- /* position: relative; */
-    height: 600px;
+ 
+   
 }
 
 .store-container{
     background-color: rgb(153, 47, 153);
     width: 250px;
-    /* height: 300px; */
     border-radius: 10px;
     color: #FFFFFF;
-     /* position: fixed; */
      right: 10px;
-  
     border: 2px solid purple;
     
 }

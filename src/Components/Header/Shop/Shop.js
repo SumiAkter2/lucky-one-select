@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../../Product/Product';
 import Store from '../../Store/Store';
 import './Shop.css'
+import Answer from '../../Answer/Answer';
 
 
 const Shop = () => {
@@ -20,16 +21,8 @@ const Shop = () => {
 // add list item////////////////////////
 
     const addToStore=(product)=>{
-
-    // if (product.id===products.id){
         const newStore = [...stores,product];
         setStores(newStore.slice(0,4));
-        // document.getElementsByClassName('error').style.display='none';
-    // }
-    // else{
-    //     console.log('sorry');
-    //     document.getElementsByClassName('error').style.display='block';
-    // }
 }
     //remove///////////////////
    
@@ -38,29 +31,28 @@ const Shop = () => {
     }
 
 
- const handleRandom =(product)=>{
-     const num=Math.round(Math.random()*(product.length-0));
-    //  console.log(stores);
-    const newNum=[num]
-    console.log(newNum);
+ const getRandomItem =(product)=>{
+     const num=Math.floor(Math.random()*product.length-0);
+  
+    const newNum=[num];
+    
     setStores(newNum);
  }
 
-
     return (
-       
-            <div className='shop-container'>
+       <div>
+           
+           <div className='shop-container'>
             <div className='shop'>
-
-          
             {
               products.map(product=><Product
                 key={product._id}
                 addToStore={addToStore}
-              
                 product={product}></Product>)
             }
+           
               </div>
+              
          <div className='store-container'>
         <h2 className='store-text'>Select Your Favorite 4 Products</h2>
         <div>
@@ -75,7 +67,7 @@ const Shop = () => {
                <h1>Sorry !! Please select 4 items.</h1>
            </div>
         </div>
-       <button onClick={handleRandom} className='Store-btn'>Select One For Me </button>
+       <button onClick={getRandomItem} className='Store-btn'>Select One For Me </button>
       
        <br /><br />
        <button onClick={removeToStore} className='Store-btn'>Remove All <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon> </button>
@@ -83,6 +75,8 @@ const Shop = () => {
         
         
         </div>
+        <Answer></Answer>
+       </div>
       
     );
         

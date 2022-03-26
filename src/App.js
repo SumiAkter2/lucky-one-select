@@ -9,16 +9,16 @@ function App() {
   return (
 
     
-      <div className='App'>
+     
       
-      <div>
+      <div className='App'>
         {/* <Answer></Answer> */}
-        </div>
+       
      <Header></Header>
      <Shop></Shop>
   
-     
-     
+   
+    
     </div>
    
   );

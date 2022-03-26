@@ -17,7 +17,7 @@ const Answer = () => {
         <h1>Q:How useState works????
         </h1>
         <h3>Ans:
-            useState is a hook function.</h3>
+            useState is a hook (function) that is used to state variables in functional Components.It enables to add state to function components.when we call React.useState inside a function components ,it generates a single piece of state associated with that component.</h3>
         </div>
     );
 };

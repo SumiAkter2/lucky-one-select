@@ -1,4 +1,8 @@
 .answer-container{
     background-color: purple;
     color: #FFFF;
+    text-align: start;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
 }
