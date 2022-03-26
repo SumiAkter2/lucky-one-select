@@ -55,18 +55,20 @@
 .error{
     display: none;
 }
+
 @media screen and (max-width:576px) {
     .shop-container{
         display: grid;
         grid-template-columns: 2fr 1fr;
         margin: 20px;
-      position: relative;
+     
+
     }
     .shop{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 4px;
-        height: 600px;
+       
         
     }
 }

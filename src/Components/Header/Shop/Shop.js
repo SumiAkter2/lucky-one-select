@@ -32,7 +32,7 @@ const Shop = () => {
 
 
  const getRandomItem =(product)=>{
-     const num=Math.floor(Math.random()*product.length-0);
+     const num=Math.round(Math.random()*product.length-0);
   
     const newNum=[num];
     
@@ -74,8 +74,9 @@ const Shop = () => {
         </div>
         
         
-        </div>
+        
         <Answer></Answer>
+        </div>
        </div>
       
     );
