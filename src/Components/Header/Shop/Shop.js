@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../../Product/Product';
+import Store from '../../Store/Store';
 import './Shop.css'
+
 const Shop = () => {
     const [products, setProducts] =useState([]);
     useEffect(()=>{
@@ -8,11 +10,11 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data));
     },[]);
-const [store, setStore]=useState([]);
+const [stores, setStores]=useState([]);
     const addToStore=(product)=>{
-        console.log('ki',product);
-const newStore = [...store,product];
-setStore(newStore)
+       
+const newStore = [...stores,product];
+setStores(newStore)
 
     }
 
@@ -30,7 +32,12 @@ setStore(newStore)
               </div>
          <div className='store-container'>
          <h1>store</h1>
-         <h1>Name: {store}</h1>
+         {
+             stores.map(store=><Store 
+                key={store._id}
+                store={store}></Store>)
+         }
+       
          </div>
         </div>
     );
