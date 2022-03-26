@@ -17,8 +17,6 @@ const Store = (props) => {
                          </li>
                </ul>
                </div>
-              
-         
         </div>
     );
 };

@@ -21,22 +21,15 @@ const Shop = () => {
 
     const addToStore=(product)=>{
 
-    
-    // if(addToStore){
-    //     console.log('asei');
-    //     const newStore = [...stores,product];
-    //     setStores(newStore);
-      
-    // }
-    if (addToStore){
+    // if (product.id===products.id){
         const newStore = [...stores,product];
         setStores(newStore.slice(0,4));
-        document.getElementsByClassName('error').style.display='none';
-    }
-    else{
-        console.log('sorry');
-        document.getElementsByClassName('error').style.display='block';
-    }
+        // document.getElementsByClassName('error').style.display='none';
+    // }
+    // else{
+    //     console.log('sorry');
+    //     document.getElementsByClassName('error').style.display='block';
+    // }
 }
     //remove///////////////////
    
@@ -44,21 +37,14 @@ const Shop = () => {
         setStores([]);
     }
 
-    // const handleSelectProduct =( )=>{
-    //     const selectProduct=  (Math.random(0,stores.length-1));
-    // }
-//     // random choosen///////////////////////
-//     const [select, setSelect]=useState([]);
-//    const handleSelectProduct=()=>{
-// const selectProduct = Math.random(0, select.length-1)*10
 
-// setSelect(selectProduct);
-// console.log(selectProduct);
-//    }
-const handleSelectProduct =( )=>{
-const rndInt = Math.floor(Math.random() * 11) + 1;
-console.log(rndInt)
-}
+ const handleRandom =(product)=>{
+     const num=Math.round(Math.random()*(product.length-0));
+    //  console.log(stores);
+    const newNum=[num]
+    console.log(newNum);
+    setStores(newNum);
+ }
 
 
     return (
@@ -71,32 +57,35 @@ console.log(rndInt)
               products.map(product=><Product
                 key={product._id}
                 addToStore={addToStore}
-             
+              
                 product={product}></Product>)
             }
               </div>
          <div className='store-container'>
         <h2 className='store-text'>Select Your Favorite 4 Products</h2>
         <div>
+
         {
-             stores.map(store=> (<Store
+             stores.map(store=> <Store
                  key={store._id} 
-                 store={store}></Store>) )
+                 store={store}></Store> )
                
          }
           <div className='error'>
                <h1>Sorry !! Please select 4 items.</h1>
            </div>
         </div>
-       <button onClick={handleSelectProduct} className='Store-btn'>Select One For Me </button>
+       <button onClick={handleRandom} className='Store-btn'>Select One For Me </button>
+      
        <br /><br />
        <button onClick={removeToStore} className='Store-btn'>Remove All <FontAwesomeIcon icon={faRemove}></FontAwesomeIcon> </button>
-         </div>
+        </div>
+        
         
         </div>
-       
       
     );
-};
+        
+}
 
 export default Shop;
